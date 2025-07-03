@@ -1,0 +1,95 @@
+CRITICAL - 2024-06-14 00:00:50 --> ErrorException: Attempt to read property "kode_pesanan" on bool
+in APPPATH\Views\pemesanan\list_pemesanan.php on line 39.
+ 1 APPPATH\Views\pemesanan\list_pemesanan.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_pesanan" on bool', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\pemesanan\\list_pemesanan.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\pemesanan\\list_pemesanan.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pemesanan/list_pemesanan.php', [], true)
+ 5 APPPATH\Controllers\Pemesanan.php(26): view('pemesanan/list_pemesanan.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Pemesanan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemesanan))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:05:06 --> ErrorException: Undefined property: stdClass::$nama_pemesan
+in APPPATH\Controllers\Order.php on line 20.
+ 1 APPPATH\Controllers\Order.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_pemesan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Controllers\\Order.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:05:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order/list_pemesanan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order/list_pemesanan.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_pemesanan.php', [], true)
+ 3 APPPATH\Controllers\Order.php(26): view('order/list_pemesanan.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:06:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order/list_pemesanan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order/list_pemesanan.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_pemesanan.php', [], true)
+ 3 APPPATH\Controllers\Order.php(26): view('order/list_pemesanan.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:06:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "order/list_pemesanan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('order/list_pemesanan.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_pemesanan.php', [], true)
+ 3 APPPATH\Controllers\Order.php(26): view('order/list_pemesanan.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:06:39 --> ErrorException: Undefined property: stdClass::$nama_pemesan
+in APPPATH\Views\order\list_order.php on line 45.
+ 1 APPPATH\Views\order\list_order.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_pemesan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(26): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:07:33 --> ErrorException: Undefined property: stdClass::$nama_pemesan
+in APPPATH\Views\order\list_order.php on line 45.
+ 1 APPPATH\Views\order\list_order.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_pemesan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(26): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:09:56 --> ErrorException: Undefined property: stdClass::$nama_pemesan
+in APPPATH\Views\order\list_order.php on line 45.
+ 1 APPPATH\Views\order\list_order.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_pemesan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(26): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:10:38 --> ErrorException: Undefined property: stdClass::$nama_pemesan
+in APPPATH\Views\order\list_order.php on line 45.
+ 1 APPPATH\Views\order\list_order.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_pemesan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(26): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-14 00:13:34 --> TypeError: App\Controllers\Pemesanan::edit(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Pemesanan.php on line 100.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Pemesanan->edit('1')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pemesanan))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

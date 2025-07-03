@@ -1,0 +1,1044 @@
+INFO - 2024-06-06 01:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 01:28:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:06:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:06:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:07:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-06 09:23:13 --> mysqli_sql_exception: Table 'kelompok1.users' doesn't exist in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\system\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\kelompok1\system\BaseModel.php(802): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\kelompok1\system\Model.php(749): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\kelompok1\system\BaseModel.php(713): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\kelompok1\app\Controllers\Register.php(31): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Register->save()
+#10 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#11 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-06-06 09:23:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kelompok1.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (:nama_user:, :alamat_user:, :no_hp_user:, :email_user:, :password_user:, :kode_role:)', [...], false)
+ 2 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Register.php(31): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Register->save()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 09:23:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kelompok1.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (\'pelanggan1\', \'Jl. Hasan Kepala Ratu No.1052, Sindang Sari, Kec. Kotabumi, Kabupaten Lampung Utara, Lampung 34517\', \'081122334459\', \'pelanggan1@gmail.com\', \'PELANGGAN1\', 2)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (\'pelanggan1\', \'Jl. Hasan Kepala Ratu No.1052, Sindang Sari, Kec. Kotabumi, Kabupaten Lampung Utara, Lampung 34517\', \'081122334459\', \'pelanggan1@gmail.com\', \'PELANGGAN1\', 2)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (:nama_user:, :alamat_user:, :no_hp_user:, :email_user:, :password_user:, :kode_role:)', [...], false)
+ 4 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Register.php(31): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Register->save()
+10 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 09:23:13 --> [Caused by] mysqli_sql_exception: Table 'kelompok1.users' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (\'pelanggan1\', \'Jl. Hasan Kepala Ratu No.1052, Sindang Sari, Kec. Kotabumi, Kabupaten Lampung Utara, Lampung 34517\', \'081122334459\', \'pelanggan1@gmail.com\', \'PELANGGAN1\', 2)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (\'pelanggan1\', \'Jl. Hasan Kepala Ratu No.1052, Sindang Sari, Kec. Kotabumi, Kabupaten Lampung Utara, Lampung 34517\', \'081122334459\', \'pelanggan1@gmail.com\', \'PELANGGAN1\', 2)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (\'pelanggan1\', \'Jl. Hasan Kepala Ratu No.1052, Sindang Sari, Kec. Kotabumi, Kabupaten Lampung Utara, Lampung 34517\', \'081122334459\', \'pelanggan1@gmail.com\', \'PELANGGAN1\', 2)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nama_user`, `alamat_user`, `no_hp_user`, `email_user`, `password_user`, `kode_role`) VALUES (:nama_user:, :alamat_user:, :no_hp_user:, :email_user:, :password_user:, :kode_role:)', [...], false)
+ 5 SYSTEMPATH\Model.php(327): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(802): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(749): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(713): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Register.php(31): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Register->save()
+11 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 09:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 09:26:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 09:53:48 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\user\produk.php on line 20.
+ 1 APPPATH\Views\user\produk.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/produk', [], true)
+ 5 APPPATH\Controllers\Barang.php(107): view('user/produk')
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->Produk()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 10:10:38 --> ErrorException: Undefined variable $aBarang
+in APPPATH\Views\user\produk.php on line 29.
+ 1 APPPATH\Views\user\produk.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php', 29)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/produk', [], true)
+ 5 APPPATH\Controllers\Barang.php(109): view('user/produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->Produk()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 10:28:51 --> ErrorException: Undefined variable $barangList
+in APPPATH\Views\order\tambah_order_user.php on line 42.
+ 1 APPPATH\Views\order\tambah_order_user.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\tambah_order_user.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\tambah_order_user.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/tambah_order_user.php', [], true)
+ 5 APPPATH\Controllers\Order.php(93): view('order/tambah_order_user.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:31:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:31:47 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 10:34:06 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\user\tambah_order.php on line 40.
+ 1 APPPATH\Views\user\tambah_order.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(93): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 10:35:06 --> ErrorException: Attempt to read property "nama_barang" on array
+in APPPATH\Views\user\tambah_order.php on line 40.
+ 1 APPPATH\Views\user\tambah_order.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_barang" on array', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(93): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 10:36:20 --> ErrorException: Undefined variable $barangList
+in APPPATH\Views\order\tambah_order.php on line 42.
+ 1 APPPATH\Views\order\tambah_order.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\tambah_order.php', 42)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(92): view('order/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahuser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 10:37:09 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\user\tambah_order.php on line 40.
+ 1 APPPATH\Views\user\tambah_order.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 40)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(93): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:37:16 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:37:50 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:38:04 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:38:15 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:38:23 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:38:32 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:40:53 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:41:54 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:42:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:42:48 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:50:31 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:52:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:52:52 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:56:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:56:48 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:57:34 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:58:09 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 10:58:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 10:58:19 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:04:35 --> ErrorException: Undefined variable $user
+in APPPATH\Views\user\tambah_order.php on line 10.
+ 1 APPPATH\Views\user\tambah_order.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 10)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(50): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:04:55 --> ErrorException: Undefined variable $userList
+in APPPATH\Views\user\tambah_order.php on line 9.
+ 1 APPPATH\Views\user\tambah_order.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(50): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:06:15 --> Error: Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Order.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:07:09 --> Error: Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Order.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:07:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:07:13 --> Error: Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Order.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:07:59 --> ErrorException: Undefined variable $userList
+in APPPATH\Views\user\tambah_order.php on line 9.
+ 1 APPPATH\Views\user\tambah_order.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(95): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:08:58 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:09:25 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:10:13 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:10:46 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 11:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 11:21:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:21:23 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:27:36 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:32:05 --> ErrorException: Undefined variable $barangModel
+in APPPATH\Controllers\Order.php on line 94.
+ 1 APPPATH\Controllers\Order.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barangModel', 'C:\\xampp\\htdocs\\kelompok1\\app\\Controllers\\Order.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:33:39 --> ErrorException: Undefined property: App\Controllers\Order::$barangModel
+in APPPATH\Controllers\Order.php on line 94.
+ 1 APPPATH\Controllers\Order.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Order::$barangModel', 'C:\\xampp\\htdocs\\kelompok1\\app\\Controllers\\Order.php', 94)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:34:05 --> ErrorException: Undefined variable $selectedBarang
+in APPPATH\Views\user\tambah_order.php on line 18.
+ 1 APPPATH\Views\user\tambah_order.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(95): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:34:27 --> ErrorException: Undefined variable $selectedBarang
+in APPPATH\Views\user\tambah_order.php on line 18.
+ 1 APPPATH\Views\user\tambah_order.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(95): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:34:54 --> ErrorException: Undefined variable $selectedBarang
+in APPPATH\Views\user\tambah_order.php on line 18.
+ 1 APPPATH\Views\user\tambah_order.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(95): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:35:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:35:09 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:36:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:36:28 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:37:41 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 11:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 11:38:58 --> TypeError: App\Controllers\Order::tambahUser(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+in APPPATH\Controllers\Order.php on line 62.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('carousel.css')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:45:25 --> ErrorException: Undefined variable $id_user
+in APPPATH\Controllers\Order.php on line 80.
+ 1 APPPATH\Controllers\Order.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_user', 'C:\\xampp\\htdocs\\kelompok1\\app\\Controllers\\Order.php', 80)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 11:46:12 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `user` FOREIGN KEY (`id_user`) REFERENCES `tbl_user` (`id_user`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(81): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 11:46:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `user` FOREIGN KEY (`id_user`) REFERENCES `tbl_user` (`id_user`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 2 APPPATH\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(81): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:46:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `user` FOREIGN KEY (`id_user`) REFERENCES `tbl_user` (`id_user`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'10\', \'1\', \'1717674372_71b9d5946f82b82eb319.webp\', \'B4251\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'10\', \'1\', \'1717674372_71b9d5946f82b82eb319.webp\', \'B4251\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 4 APPPATH\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(81): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:46:12 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `user` FOREIGN KEY (`id_user`) REFERENCES `tbl_user` (`id_user`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'10\', \'1\', \'1717674372_71b9d5946f82b82eb319.webp\', \'B4251\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'10\', \'1\', \'1717674372_71b9d5946f82b82eb319.webp\', \'B4251\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'10\', \'1\', \'1717674372_71b9d5946f82b82eb319.webp\', \'B4251\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 5 APPPATH\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(81): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:47:24 --> ErrorException: Undefined variable $kode_barang
+in APPPATH\Controllers\Order.php on line 70.
+ 1 APPPATH\Controllers\Order.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Controllers\\Order.php', 70)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 11:47:35 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(71): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 11:47:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:)', [...], false)
+ 2 APPPATH\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(71): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:47:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (NULL, \'10\', \'1\', \'1717674455_c033ed4a16e9a80e0201.webp\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (NULL, \'10\', \'1\', \'1717674455_c033ed4a16e9a80e0201.webp\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:)', [...], false)
+ 4 APPPATH\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(71): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:47:36 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (NULL, \'10\', \'1\', \'1717674455_c033ed4a16e9a80e0201.webp\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (NULL, \'10\', \'1\', \'1717674455_c033ed4a16e9a80e0201.webp\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (NULL, \'10\', \'1\', \'1717674455_c033ed4a16e9a80e0201.webp\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:)', [...], false)
+ 5 APPPATH\Models\M_order.php(34): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(71): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('B4251')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 11:59:15 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(35): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(73): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambahUser('S1234')
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 11:59:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :nama_order:, :id_pembayaran:, :bukti_pembayaran:, :alamat_order:, :kode_barang:)', [...], false)
+ 2 APPPATH\Models\M_order.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(73): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:59:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (NULL, \'10\', \'2\', \'1\', \'1717675155_ba4a096d8b67782a32aa.png\', \'2\', \'S1234\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (NULL, \'10\', \'2\', \'1\', \'1717675155_ba4a096d8b67782a32aa.png\', \'2\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :nama_order:, :id_pembayaran:, :bukti_pembayaran:, :alamat_order:, :kode_barang:)', [...], false)
+ 4 APPPATH\Models\M_order.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(73): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('S1234')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 11:59:15 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (NULL, \'10\', \'2\', \'1\', \'1717675155_ba4a096d8b67782a32aa.png\', \'2\', \'S1234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (NULL, \'10\', \'2\', \'1\', \'1717675155_ba4a096d8b67782a32aa.png\', \'2\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (NULL, \'10\', \'2\', \'1\', \'1717675155_ba4a096d8b67782a32aa.png\', \'2\', \'S1234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `nama_order`, `id_pembayaran`, `bukti_pembayaran`, `alamat_order`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :nama_order:, :id_pembayaran:, :bukti_pembayaran:, :alamat_order:, :kode_barang:)', [...], false)
+ 5 APPPATH\Models\M_order.php(35): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(73): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambahUser('S1234')
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 12:00:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-06 12:00:16 --> mysqli_sql_exception: Unknown column 'tbl_barang.id_user' in 'on clause' in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_ord...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_ord...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_ord...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_ord...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(17): App\Models\M_order->list_all()
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->index()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 12:00:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_barang.id_user' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', [], false)
+ 2 APPPATH\Models\M_order.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Order.php(17): App\Models\M_order->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:00:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_barang.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', [], false)
+ 4 APPPATH\Models\M_order.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Order.php(17): App\Models\M_order->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:00:16 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_barang.id_user' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_user`.*, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_user` ON `tbl_barang`.`id_user` = `tbl_user`.`id_user`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', [], false)
+ 5 APPPATH\Models\M_order.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Order.php(17): App\Models\M_order->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 12:01:29 --> mysqli_sql_exception: Unknown column 'tbl_barang.id_status' in 'on clause' in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_ord...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_ord...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_ord...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_ord...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(17): App\Models\M_order->list_all()
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->index()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 12:01:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_barang.id_status' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', [], false)
+ 2 APPPATH\Models\M_order.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Order.php(17): App\Models\M_order->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:01:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_barang.id_status' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', [], false)
+ 4 APPPATH\Models\M_order.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Order.php(17): App\Models\M_order->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:01:29 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_barang.id_status' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_order`.*, `tbl_pembayaran`.`nama_pembayaran`, `tbl_barang`.*, (tbl_order.jumlah_order * tbl_barang.harga_barang) as total_harga, `tbl_status`.*
+FROM `tbl_order`
+LEFT JOIN `tbl_pembayaran` ON `tbl_pembayaran`.`id_pembayaran` = `tbl_order`.`id_pembayaran`
+LEFT JOIN `tbl_barang` ON `tbl_barang`.`kode_barang` = `tbl_order`.`kode_barang`
+LEFT JOIN `tbl_status` ON `tbl_barang`.`id_status` = `tbl_user`.`id_status`
+ORDER BY `jumlah_order` ASC', [], false)
+ 5 APPPATH\Models\M_order.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Order.php(17): App\Models\M_order->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 12:02:37 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(44): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambah()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 12:02:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 2 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:02:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675357_eb04429f0d49c6d5a913.png\', \'S1234\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675357_eb04429f0d49c6d5a913.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 4 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:02:37 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675357_eb04429f0d49c6d5a913.png\', \'S1234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675357_eb04429f0d49c6d5a913.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675357_eb04429f0d49c6d5a913.png\', \'S1234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 5 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 12:03:02 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(44): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambah()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 12:03:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 2 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:03:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675382_22fa983aadfcb1b2d583.png\', \'S1234\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675382_22fa983aadfcb1b2d583.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 4 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:03:02 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675382_22fa983aadfcb1b2d583.png\', \'S1234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675382_22fa983aadfcb1b2d583.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675382_22fa983aadfcb1b2d583.png\', \'S1234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 5 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 12:03:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(44): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambah()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 12:03:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 2 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:03:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675407_73327e4eb19d9a10aa85.png\', \'S1234\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675407_73327e4eb19d9a10aa85.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 4 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:03:27 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675407_73327e4eb19d9a10aa85.png\', \'S1234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675407_73327e4eb19d9a10aa85.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675407_73327e4eb19d9a10aa85.png\', \'S1234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 5 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-06 12:03:45 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(44): App\Models\M_order->add(Array)
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->tambah()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-06 12:03:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 2 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:03:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675425_d41e14603a39ab6a7132.png\', \'S1234\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675425_d41e14603a39ab6a7132.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 4 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:03:45 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `status` FOREIGN KEY (`id_status`) REFERENCES `tbl_status` (`id_status`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675425_d41e14603a39ab6a7132.png\', \'S1234\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675425_d41e14603a39ab6a7132.png\', \'S1234\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (NULL, \'4\', \'2\', \'1717675425_d41e14603a39ab6a7132.png\', \'S1234\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2307): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_order` (`kode_order`, `jumlah_order`, `id_pembayaran`, `bukti_pembayaran`, `kode_barang`) VALUES (:kode_order:, :jumlah_order:, :id_pembayaran:, :bukti_pembayaran:, :kode_barang:)', [...], false)
+ 5 APPPATH\Models\M_order.php(33): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Order.php(44): App\Models\M_order->add([...])
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->tambah()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:05:01 --> ErrorException: Undefined variable $id_user
+in APPPATH\Controllers\Order.php on line 97.
+ 1 APPPATH\Controllers\Order.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_user', 'C:\\xampp\\htdocs\\kelompok1\\app\\Controllers\\Order.php', 97)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('12')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 12:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 12:08:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 12:09:45 --> ErrorException: Undefined variable $userList
+in APPPATH\Views\user\tambah_order.php on line 11.
+ 1 APPPATH\Views\user\tambah_order.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 11)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\OrderUser.php(50): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\OrderUser->tambah('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:16:09 --> ErrorException: Undefined variable $userList
+in APPPATH\Views\user\tambah_order.php on line 61.
+ 1 APPPATH\Views\user\tambah_order.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php', 61)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\tambah_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/tambah_order.php', [], true)
+ 5 APPPATH\Controllers\OrderUser.php(50): view('user/tambah_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\OrderUser->tambah('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 12:21:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 12:21:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 12:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 12:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-06 12:29:52 --> ErrorException: Undefined property: stdClass::$status_pesanan
+in APPPATH\Views\user\list_order.php on line 39.
+ 1 APPPATH\Views\user\list_order.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status_pesanan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\list_order.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/list_order.php', [], true)
+ 5 APPPATH\Controllers\OrderUser.php(20): view('user/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\OrderUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:32:50 --> ErrorException: Undefined property: stdClass::$status_pesanan
+in APPPATH\Views\user\list_order.php on line 39.
+ 1 APPPATH\Views\user\list_order.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status_pesanan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\list_order.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/list_order.php', [], true)
+ 5 APPPATH\Controllers\OrderUser.php(20): view('user/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\OrderUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:33:47 --> ErrorException: Undefined property: stdClass::$status_pesanan
+in APPPATH\Views\user\list_order.php on line 39.
+ 1 APPPATH\Views\user\list_order.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$status_pesanan', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\list_order.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/list_order.php', [], true)
+ 5 APPPATH\Controllers\OrderUser.php(20): view('user/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\OrderUser->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OrderUser))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:43:37 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 4 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 109 and exactly 5 expected
+in APPPATH\Models\M_order.php on line 62.
+ 1 APPPATH\Controllers\Order.php(109): App\Models\M_order->updateData('16', '10', '2', 'S1234')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('16')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:44:47 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 4 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 109 and exactly 6 expected
+in APPPATH\Models\M_order.php on line 62.
+ 1 APPPATH\Controllers\Order.php(109): App\Models\M_order->updateData('16', '10', '2', 'S1234')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('16')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 12:50:33 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 4 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 109 and exactly 5 expected
+in APPPATH\Models\M_order.php on line 62.
+ 1 APPPATH\Controllers\Order.php(109): App\Models\M_order->updateData('16', '10', '2', 'S1234')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('16')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-06 23:38:52 --> ErrorException: Undefined property: stdClass::$almat_user
+in APPPATH\Views\order\list_order.php on line 34.
+ 1 APPPATH\Views\order\list_order.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$almat_user', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(20): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-06 23:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 23:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 23:45:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-06 23:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

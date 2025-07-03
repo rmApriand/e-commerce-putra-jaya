@@ -1,0 +1,63 @@
+INFO - 2024-06-09 04:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-09 04:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-09 22:41:50 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM tbl...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tbl...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_barang.php(83): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tbl...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Barang.php(100): App\Models\M_barang->deleteData('B4251')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Barang->delete('B4251')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-09 22:41:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot delete or update a parent row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tbl_barang WHERE kode_barang = \'B4251\';')
+ 2 APPPATH\Models\M_barang.php(83): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tbl_barang WHERE kode_barang = \'B4251\';')
+ 3 APPPATH\Controllers\Barang.php(100): App\Models\M_barang->deleteData('B4251')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->delete('B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 22:41:50 --> [Caused by] mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM tbl_barang WHERE kode_barang = \'B4251\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM tbl_barang WHERE kode_barang = \'B4251\';')
+ 3 APPPATH\Models\M_barang.php(83): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM tbl_barang WHERE kode_barang = \'B4251\';')
+ 4 APPPATH\Controllers\Barang.php(100): App\Models\M_barang->deleteData('B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->delete('B4251')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 23:06:34 --> ParseError: syntax error, unexpected token "<"
+in APPPATH\Views\user\produk.php on line 43.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/produk', [], true)
+ 3 APPPATH\Controllers\Barang.php(109): view('user/produk', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->Produk()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 23:19:53 --> ErrorException: Undefined variable $sayur
+in APPPATH\Views\user\produk.php on line 41.
+ 1 APPPATH\Views\user\produk.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sayur', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php', 41)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/produk', [], true)
+ 5 APPPATH\Controllers\Barang.php(109): view('user/produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->Produk()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-09 23:20:18 --> ErrorException: Undefined variable $buah
+in APPPATH\Views\user\produk.php on line 60.
+ 1 APPPATH\Views\user\produk.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $buah', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\produk.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/produk', [], true)
+ 5 APPPATH\Controllers\Barang.php(109): view('user/produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->Produk()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

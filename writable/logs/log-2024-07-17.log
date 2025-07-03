@@ -1,0 +1,112 @@
+INFO - 2024-07-17 00:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-17 00:00:02 --> ErrorException: Undefined variable $activeUserId
+in APPPATH\Views\user\chat.php on line 9.
+ 1 APPPATH\Views\user\chat.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeUserId', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\chat.php', 9)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\chat.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/chat', [], true)
+ 5 APPPATH\Controllers\Chat.php(20): view('user/chat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Chat->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-17 00:00:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:00:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:00:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:00:37 --> CSRF token verified.
+INFO - 2024-07-17 00:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-17 00:00:58 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 00:02:34 --> ErrorException: Undefined property: Config\Security::$cookieName
+in SYSTEMPATH\Security\Security.php on line 196.
+ 1 SYSTEMPATH\Security\Security.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Security::$cookieName', 'C:\\xampp\\htdocs\\kelompok1\\system\\Security\\Security.php', 196)
+ 2 SYSTEMPATH\Config\Services.php(653): CodeIgniter\Security\Security->__construct(Object(Config\Security))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::security(Object(Config\Security), false)
+ 4 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('security', [...])
+ 5 SYSTEMPATH\Config\Services.php(648): CodeIgniter\Config\BaseService::getSharedInstance('security', null)
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::security()
+ 7 SYSTEMPATH\Filters\CSRF.php(53): CodeIgniter\Config\BaseService::__callStatic('security', [])
+ 8 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 00:02:37 --> ErrorException: Undefined property: Config\Security::$cookieName
+in SYSTEMPATH\Security\Security.php on line 196.
+ 1 SYSTEMPATH\Security\Security.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Security::$cookieName', 'C:\\xampp\\htdocs\\kelompok1\\system\\Security\\Security.php', 196)
+ 2 SYSTEMPATH\Config\Services.php(653): CodeIgniter\Security\Security->__construct(Object(Config\Security))
+ 3 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::security(Object(Config\Security), false)
+ 4 SYSTEMPATH\Config\BaseService.php(199): CodeIgniter\Config\BaseService::__callStatic('security', [...])
+ 5 SYSTEMPATH\Config\Services.php(648): CodeIgniter\Config\BaseService::getSharedInstance('security', null)
+ 6 SYSTEMPATH\Config\BaseService.php(258): CodeIgniter\Config\Services::security()
+ 7 SYSTEMPATH\Filters\CSRF.php(53): CodeIgniter\Config\BaseService::__callStatic('security', [])
+ 8 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 00:02:44 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-17 00:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:04:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:04:19 --> CSRF token verified.
+INFO - 2024-07-17 00:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:04:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-17 00:04:28 --> ErrorException: Undefined variable $activeUserId
+in APPPATH\Views\user\chat.php on line 7.
+ 1 APPPATH\Views\user\chat.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $activeUserId', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\chat.php', 7)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\user\\chat.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('user/chat', [], true)
+ 5 APPPATH\Controllers\Chat.php(20): view('user/chat', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Chat->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Chat))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-17 00:04:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-17 00:04:47 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 00:05:12 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-17 00:05:27 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 300.
+ 1 SYSTEMPATH\Security\Security.php(300): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(56): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(182): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(475): CodeIgniter\Filters\Filters->run('chat/kirim', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-17 00:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:08:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 00:08:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-17 13:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

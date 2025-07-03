@@ -1,0 +1,5 @@
+INFO - 2024-08-03 10:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-03 10:39:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-03 10:39:15 --> CSRF token verified.
+INFO - 2024-08-03 10:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-03 10:39:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

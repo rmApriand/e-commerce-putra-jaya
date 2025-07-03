@@ -1,0 +1,150 @@
+CRITICAL - 2024-05-14 10:21:22 --> ArgumentCountError: Too few arguments to function App\Controllers\Matakuliah::edit(), 1 passed in C:\xampp\htdocs\rama_tes1\system\CodeIgniter.php on line 943 and exactly 5 expected
+in APPPATH\Controllers\Matakuliah.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:22:37 --> ArgumentCountError: Too few arguments to function App\Controllers\Matakuliah::edit(), 1 passed in C:\xampp\htdocs\rama_tes1\system\CodeIgniter.php on line 943 and exactly 4 expected
+in APPPATH\Controllers\Matakuliah.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:23:35 --> ArgumentCountError: Too few arguments to function App\Controllers\Matakuliah::edit(), 1 passed in C:\xampp\htdocs\rama_tes1\system\CodeIgniter.php on line 943 and exactly 4 expected
+in APPPATH\Controllers\Matakuliah.php on line 40.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:24:58 --> ErrorException: Undefined variable $prodilist
+in APPPATH\Views\mk\edit_matakuliah.php on line 314.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodilist', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 314)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(52): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:25:31 --> ErrorException: Undefined variable $prodilist
+in APPPATH\Views\mk\edit_matakuliah.php on line 314.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodilist', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 314)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(53): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:27:29 --> ErrorException: Undefined variable $prodilist
+in APPPATH\Views\mk\edit_matakuliah.php on line 314.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodilist', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 314)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:28:27 --> ErrorException: Attempt to read property "kode_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 343.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 343)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap', 'dashboard', 'dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:28:43 --> ErrorException: Attempt to read property "kode_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 343.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 343)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap', 'dashboard', 'dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:28:45 --> ErrorException: Attempt to read property "kode_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 343.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(343): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "kode_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 343)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap', 'dashboard', 'dashboard.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:28:53 --> ErrorException: Undefined variable $prodilist
+in APPPATH\Views\mk\edit_matakuliah.php on line 314.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodilist', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 314)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:29:34 --> ErrorException: Undefined variable $prodilist
+in APPPATH\Views\mk\edit_matakuliah.php on line 314.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(314): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $prodilist', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 314)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('PBSI21172')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:31:41 --> ErrorException: Attempt to read property "nama_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 288.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 288)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap-examples', 'assets', 'js', 'color-modes.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:31:48 --> ErrorException: Attempt to read property "nama_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 288.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 288)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap-examples', 'assets', 'js', 'color-modes.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:31:58 --> ErrorException: Attempt to read property "nama_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 288.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 288)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap-examples', 'assets', 'js', 'color-modes.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-05-14 10:32:01 --> ErrorException: Attempt to read property "nama_mk" on null
+in APPPATH\Views\mk\edit_matakuliah.php on line 288.
+ 1 APPPATH\Views\mk\edit_matakuliah.php(288): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_mk" on null', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php', 288)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\rama_tes1\\app\\Views\\mk\\edit_matakuliah.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('mk/edit_matakuliah.php', [], true)
+ 5 APPPATH\Controllers\Matakuliah.php(51): view('mk/edit_matakuliah.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->edit('public', 'bootstrap-examples', 'assets', 'js', 'color-modes.js')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

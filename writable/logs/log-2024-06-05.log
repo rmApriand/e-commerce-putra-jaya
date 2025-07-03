@@ -1,0 +1,629 @@
+CRITICAL - 2024-06-05 02:12:36 --> Error: Call to a member function isValid() on null
+in APPPATH\Controllers\Barang.php on line 28.
+ 1 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->tambah()
+ 2 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:03:40 --> ErrorException: Undefined property: stdClass::$gambar_order
+in APPPATH\Views\order\list_order.php on line 33.
+ 1 APPPATH\Views\order\list_order.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$gambar_order', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(20): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:05:20 --> ErrorException: Undefined property: stdClass::$nama_kategori
+in APPPATH\Views\order\list_order.php on line 38.
+ 1 APPPATH\Views\order\list_order.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_kategori', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php', 38)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\list_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/list_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(20): view('order/list_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:07:50 --> ErrorException: Undefined variable $aBarang
+in APPPATH\Views\order\edit_order.php on line 8.
+ 1 APPPATH\Views\order\edit_order.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/edit_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(90): view('order/edit_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:12:22 --> ErrorException: Undefined variable $aBarang
+in APPPATH\Views\order\edit_order.php on line 30.
+ 1 APPPATH\Views\order\edit_order.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/edit_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(90): view('order/edit_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:13:42 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\order\edit_order.php on line 35.
+ 1 APPPATH\Views\order\edit_order.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php', 35)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/edit_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(90): view('order/edit_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:15:18 --> ErrorException: Undefined variable $barang
+in APPPATH\Views\order\edit_order.php on line 43.
+ 1 APPPATH\Views\order\edit_order.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $barang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php', 43)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/edit_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(90): view('order/edit_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:15:53 --> ErrorException: Attempt to read property "nama_barang" on array
+in APPPATH\Views\order\edit_order.php on line 43.
+ 1 APPPATH\Views\order\edit_order.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_barang" on array', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php', 43)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/edit_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(90): view('order/edit_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 06:16:51 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', NULL, 'S1234')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 06:16:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:16:51 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 06:21:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', NULL, 'S1234')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 06:21:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:21:29 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 06:21:54 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', '1717568514_fc68...', 'S1234')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 06:21:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'1717568514_fc68aaca03c7902f7e08.png\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'1717568514_fc68aaca03c7902f7e08.png\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', '1717568514_fc68aaca03c7902f7e08.png', 'S1234')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 06:21:54 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'1717568514_fc68aaca03c7902f7e08.png\', kode_barang = \'S1234\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'1717568514_fc68aaca03c7902f7e08.png\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'1717568514_fc68aaca03c7902f7e08.png\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', '1717568514_fc68aaca03c7902f7e08.png', 'S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 08:41:21 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', NULL, 'B4251')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 08:41:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'B4251')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 08:41:21 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 08:42:52 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', NULL, NULL, 'S1234')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 08:42:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', null, null, 'S1234')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 08:42:52 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', null, null, 'S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 08:44:53 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', NULL, 'B4251')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 08:44:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'B4251')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 08:44:53 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 10:06:29 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', NULL, 'S1234')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 10:06:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:06:29 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 10:07:13 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '2', NULL, 'S1234')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 10:07:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:07:13 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'2\', id_pembayaran = \'\', kode_barang = \'S1234\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '2', null, 'S1234')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 10:07:18 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '1', NULL, NULL)
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 10:07:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '1', null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:07:18 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '1', null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 10:07:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', NULL, NULL, NULL)
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 10:07:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:07:30 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 10:07:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '4', NULL, NULL, NULL)
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 10:07:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'4\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'4\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '4', null, null, null)
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:07:34 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `barang` FOREIGN KEY (`kode_barang`) REFERENCES `tbl_barang` (`kode_barang`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'4\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'4\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'4\', jumlah_order = \'\', id_pembayaran = \'\', kode_barang = \'\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '4', null, null, null)
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-05 10:08:11 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`)) in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_orde...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_orde...')
+#2 C:\xampp\htdocs\kelompok1\app\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_orde...')
+#3 C:\xampp\htdocs\kelompok1\app\Controllers\Order.php(77): App\Models\M_order->updateData('1', NULL, '3', '1', NULL, 'B4251')
+#4 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+#5 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+#6 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-06-05 10:08:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 2 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '1', null, 'B4251')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:08:11 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`kelompok1`.`tbl_order`, CONSTRAINT `pembayaran` FOREIGN KEY (`id_pembayaran`) REFERENCES `tbl_pembayaran` (`id_pembayaran`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 3 APPPATH\Models\M_order.php(63): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE tbl_order SET bukti_pembayaran = \'\', kode_order = \'3\', jumlah_order = \'1\', id_pembayaran = \'\', kode_barang = \'B4251\' WHERE kode_order = \'1\';')
+ 4 APPPATH\Controllers\Order.php(77): App\Models\M_order->updateData('1', null, '3', '1', null, 'B4251')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:17:35 --> ErrorException: Undefined variable $pembayaranList
+in APPPATH\Views\order\edit_order.php on line 19.
+ 1 APPPATH\Views\order\edit_order.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pembayaranList', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\order\\edit_order.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('order/edit_order.php', [], true)
+ 5 APPPATH\Controllers\Order.php(74): view('order/edit_order.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:21:57 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 3 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 76 and exactly 4 expected
+in APPPATH\Models\M_order.php on line 58.
+ 1 APPPATH\Controllers\Order.php(76): App\Models\M_order->updateData('1', '3', 'B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:22:39 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 3 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 76 and exactly 4 expected
+in APPPATH\Models\M_order.php on line 58.
+ 1 APPPATH\Controllers\Order.php(76): App\Models\M_order->updateData('1', '3', 'B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:22:45 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 3 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 76 and exactly 4 expected
+in APPPATH\Models\M_order.php on line 58.
+ 1 APPPATH\Controllers\Order.php(76): App\Models\M_order->updateData('1', '3', 'B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:24:04 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 3 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 76 and exactly 4 expected
+in APPPATH\Models\M_order.php on line 58.
+ 1 APPPATH\Controllers\Order.php(76): App\Models\M_order->updateData('1', '3', 'B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 10:24:12 --> ArgumentCountError: Too few arguments to function App\Models\M_order::updateData(), 3 passed in C:\xampp\htdocs\kelompok1\app\Controllers\Order.php on line 76 and exactly 4 expected
+in APPPATH\Models\M_order.php on line 58.
+ 1 APPPATH\Controllers\Order.php(76): App\Models\M_order->updateData('1', '3', 'B4251')
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Order->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Order))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 17:24:21 --> ErrorException: Undefined variable $aBarang
+in APPPATH\Views\barang\edit_barang.php on line 8.
+ 1 APPPATH\Views\barang\edit_barang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\barang\\edit_barang.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\barang\\edit_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('barang/edit_barang.php', [], true)
+ 5 APPPATH\Controllers\Barang.php(94): view('barang/edit_barang.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->edit('B4251')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 17:24:30 --> ErrorException: Undefined variable $aBarang
+in APPPATH\Views\barang\edit_barang.php on line 8.
+ 1 APPPATH\Views\barang\edit_barang.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $aBarang', 'C:\\xampp\\htdocs\\kelompok1\\app\\Views\\barang\\edit_barang.php', 8)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\kelompok1\\app\\Views\\barang\\edit_barang.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('barang/edit_barang.php', [], true)
+ 5 APPPATH\Controllers\Barang.php(94): view('barang/edit_barang.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Barang->edit('S1234')
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barang))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 17:50:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/login.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/login.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('template/login', [], true)
+ 3 APPPATH\Controllers\Login.php(9): view('template/login')
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-05 18:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:36:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:37:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-06-05 18:42:33 --> mysqli_sql_exception: Unknown column 'email' in 'where clause' in C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\kelompok1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\kelompok1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\kelompok1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\kelompok1\system\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\kelompok1\system\BaseModel.php(676): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\kelompok1\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(943): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\kelompok1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\kelompok1\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-05 18:42:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 2 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:42:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 4 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->auth()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-05 18:42:33 --> [Caused by] mysqli_sql_exception: Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`
+WHERE `email` IS NULL
+ LIMIT 1', [], false)
+ 5 SYSTEMPATH\Model.php(271): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Login->auth()
+ 9 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-05 18:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:47:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:48:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:48:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:49:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:50:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 18:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 19:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 19:02:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 19:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 19:04:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-05 19:04:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

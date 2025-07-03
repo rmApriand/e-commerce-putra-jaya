@@ -1,0 +1,100 @@
+ERROR - 2024-04-30 11:06:21 --> mysqli_sql_exception: Unknown column 'tbl_matakuliaj.id_prodi' in 'on clause' in C:\xampp\htdocs\rama_tes1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\rama_tes1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_mat...', 0)
+#1 C:\xampp\htdocs\rama_tes1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_mat...')
+#2 C:\xampp\htdocs\rama_tes1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_mat...')
+#3 C:\xampp\htdocs\rama_tes1\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_mat...', Array, false)
+#4 C:\xampp\htdocs\rama_tes1\app\Models\M_matakuliah.php(25): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\rama_tes1\app\Controllers\Matakuliah.php(18): App\Models\M_matakuliah->list_all()
+#6 C:\xampp\htdocs\rama_tes1\system\CodeIgniter.php(943): App\Controllers\Matakuliah->index()
+#7 C:\xampp\htdocs\rama_tes1\system\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+#8 C:\xampp\htdocs\rama_tes1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\rama_tes1\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-04-30 11:06:21 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_matakuliaj.id_prodi' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`', [], false)
+ 2 APPPATH\Models\M_matakuliah.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Matakuliah.php(18): App\Models\M_matakuliah->list_all()
+ 4 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->index()
+ 5 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 11:06:21 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'tbl_matakuliaj.id_prodi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`', [], false)
+ 4 APPPATH\Models\M_matakuliah.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Matakuliah.php(18): App\Models\M_matakuliah->list_all()
+ 6 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->index()
+ 7 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 11:06:21 --> [Caused by] mysqli_sql_exception: Unknown column 'tbl_matakuliaj.id_prodi' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_matakuliah`.*, `tbl_prodi`.`nama_prodi`
+FROM `tbl_matakuliah`
+LEFT JOIN `tbl_prodi` ON `tbl_prodi`.`id_prodi` = `tbl_matakuliaj`.`id_prodi`', [], false)
+ 5 APPPATH\Models\M_matakuliah.php(25): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Matakuliah.php(18): App\Models\M_matakuliah->list_all()
+ 7 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->index()
+ 8 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 11:56:17 --> Error: Call to undefined function url_string()
+in APPPATH\Views\prodi\tambah_programstudi.php on line 276.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('prodi/tambah_programstudi.php', [], true)
+ 4 APPPATH\Controllers\Programstudi.php(30): view('prodi/tambah_programstudi.php')
+ 5 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Programstudi->tambah()
+ 6 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programstudi))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 12:01:21 --> ErrorException: Undefined property: App\Controllers\Programstudi::$mModel
+in APPPATH\Controllers\Programstudi.php on line 29.
+ 1 APPPATH\Controllers\Programstudi.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Programstudi::$mModel', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Controllers\\Programstudi.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Programstudi->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Programstudi))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 23:29:49 --> ErrorException: Undefined variable $data
+in APPPATH\Controllers\Matakuliah.php on line 25.
+ 1 APPPATH\Controllers\Matakuliah.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Controllers\\Matakuliah.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->tambah()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 23:50:32 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Connection::select()
+in APPPATH\Models\M_matakuliah.php on line 23.
+ 1 APPPATH\Controllers\Matakuliah.php(18): App\Models\M_matakuliah->list_all()
+ 2 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->index()
+ 3 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-04-30 23:52:38 --> ErrorException: Undefined variable $builer
+in APPPATH\Models\M_matakuliah.php on line 23.
+ 1 APPPATH\Models\M_matakuliah.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $builer', 'C:\\xampp\\htdocs\\rama_tes1\\app\\Models\\M_matakuliah.php', 23)
+ 2 APPPATH\Controllers\Matakuliah.php(18): App\Models\M_matakuliah->list_all()
+ 3 SYSTEMPATH\CodeIgniter.php(943): App\Controllers\Matakuliah->index()
+ 4 SYSTEMPATH\CodeIgniter.php(503): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Matakuliah))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
